@@ -1,8 +1,8 @@
 class Person:
-    def __init__(self, name, age , pid):
+    def __init__(self, pid, name, age):
+        self.pid = pid
         self.name = name
         self.age = age
-        self.pid = pid
-        
+
     def __str__(self):
-        return f"{self.name} is {self.age} years old."
+        return f"Person[{self.pid}, {self.name}, {self.age}]"
